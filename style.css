@@ -195,6 +195,7 @@ ul {
 }
 
 .current-location {
+    display: flex;
     font-size: 13px;
     margin-top: 5px;
     font-size: .8125rem;
@@ -362,7 +363,7 @@ ul {
     justify-content: space-between;
     font-family: "Dosis", sans-serif;
     padding-bottom: 20px;
-    
+    position: relative;
     position: relative;
 }
 
@@ -573,4 +574,34 @@ ul {
     padding: 2px;
     font-size: 10px;
     border-radius: 20px;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.main{
+    width: 870px;
+}
+.wrapper, .slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slider{
+    overflow: hidden;
+}
+.slider .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slider .iamge-date{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.main-swiper{
+    width: 1200px;
 }
